@@ -1,0 +1,528 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('./FuturaPT-Medium.woff2') format('woff2'),
+      url('./FuturaPT-Medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Radley', serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura PT', 'Roboto', 'Ubuntu', 'Helvetica', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.font-futura {
+  font-family: 'Futura PT', 'Helvetica', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#App {
+  width: 100vw;
+  /* Give app full page to work with */
+  height: 100vh;
+}
+
+.page-wrap {
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.full-width {
+  width: 100vw;
+  height: 100%;
+  overflow: scroll;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.initial-logo {
+  font-size: 4.25em;
+  font-weight: 400;
+  letter-spacing: 0.016em;
+}
+
+.initial-fade-in {
+  animation: fadeIn ease 3s, slidein ease 3s, fadeOut linear 2.6s;
+  -webkit-animation: fadeIn ease 3s, slidein ease 3s, fadeOut ease 2.6s;
+  -moz-animation: fadeIn ease 3s, slidein ease 3s, fadeOut ease 2.6s;
+  -o-animation: fadeIn ease 3s, slidein ease 3s, fadeOut ease 2.6s;
+  -ms-animation: fadeIn ease 3s, slidein ease 3s, fadeOut ease 2.6s;
+  animation-delay: 0s, 0s, 2s;
+  -webkit-animation-delay: 0s, 0s, 2s;
+  -moz-animation-delay: 0s, 0s, 2s;
+  -o-animation-delay: 0s, 0s, 2s;
+  -ms-animation-delay: 0s, 0s, 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 12.5%;
+  }
+  
+  to {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    margin-top: 12.5%;
+  }
+  
+  to {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 12.5%;
+  }
+  
+  to {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@-o-keyframes slidein {
+  from {
+    margin-top: 12.5%;
+  }
+  
+  to {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@-ms-keyframes slidein {
+  from {
+    margin-top: 12.5%;
+  }
+  
+  to {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    visibility:hidden;
+    display:none;
+    overflow: hidden;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    visibility:hidden;
+    display:none;
+    overflow: hidden;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    visibility:hidden;
+    display:none;
+    overflow: hidden;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    visibility:hidden;
+    display:none;
+    overflow: hidden;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    visibility:hidden;
+    display:none;
+    overflow: hidden;
+  }
+}
+
+.slide-in-rl {
+  animation: slideInRL 2s forwards;
+  -webkit-animation: slideInRL 2s forwards;
+  -moz-animation: slideInRL 2s forwards;
+  -o-animation: slideInRL 2s forwards;
+  -ms-animation: slideInRL 2s forwards;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  /* background-color: burlywood; */
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+}
+
+
+@keyframes slideInRL {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slideInRL {
+  100% { transform: translateX(0%); }
+}
+
+@-moz-keyframes slideInRL {
+  100% { transform: translateX(0%); }
+}
+
+@-o-keyframes slideInRL {
+  100% { transform: translateX(0%); }
+}
+
+@-ms-keyframes slideInRL {
+  100% { transform: translateX(0%); }
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.logo-column {
+  font-size: 2.5em;
+  padding: 0;
+  line-height: 0;
+  margin: 46vh 0 0 43px;
+}
+
+.logo-column p {
+  margin-top: 0.125em;
+}
+
+.navbar-side {
+  grid-column: 1;
+  min-width: 104px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.navbar--fadein {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+}
+
+.hamburger-menu {
+  margin: 0;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 1.5em;
+}
+
+.fill {
+  margin: 0;
+  padding: 0;
+  grid-column: 2/13;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#sam-img {
+  width: auto;
+  height: 100vh;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-90 {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-mtb-2 {
+  margin: 0 2em;
+  background-color: white;
+}
+
+.header {
+  font-size: 2.4em;
+}
+
+.portfolio {
+  display: flex;
+}
+
+.portfolio-menu {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+}
+
+.portfolio section {
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2em 2em 16em;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+
+.portfolio-img {
+  margin-top: 2em;
+  height: 50vh;
+  width: auto;
+  align-self: center;
+}
+
+.portfolio a {
+  text-decoration: none;
+  color: #382E22;
+}
+
+.portfolio a:hover {
+  color: rgb(114, 114, 114);
+}
+
+.mb-075 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-2em {
+  margin-bottom: 2rem;
+}
+
+.project-description {
+  font-size: 1.25em;
+}
+
+.portfolio h5 {
+  font-size: 2.4em;
+  margin: 0.5em;
+}
